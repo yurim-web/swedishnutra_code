@@ -1,0 +1,213 @@
+/* health & earth 페이지 반응형 스타일 코드 */
+
+/* 스크롤 애니메이션 스타일 */
+.scroll_animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll_animate.animate_in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 배너 이미지 애니메이션 */
+.banner_animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+.banner_animate.animate_in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 부드러운 전환 효과 */
+.philosophy_section,
+.img_banner_section,
+.sustainable_section {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+  .hero_background {
+    background-image: url(/custom/health/images/earth_mo.png);
+  }
+  .pc-br::after {
+    display: none;
+  }
+  /* pc 에서 줄바꿈하는거  */
+  .mo-br::after {
+    content: "\A"; /* 줄바꿈 */
+    white-space: pre; /* 줄바꿈 인식 */
+    display: inline; /* 인라인으로 변경하여 줄 간격 조정 */
+  }
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 14px;
+  }
+
+  /* 메인 히어로 섹션 모바일 */
+  .hero_section {
+    height: 78vh;
+    /* min-height: 600px; */
+  }
+
+  .main_logo {
+    width: 100px;
+    top: 20px;
+  }
+
+  .hero_title {
+    font-size: 27px;
+    line-height: 1.3;
+    /* margin-bottom: 16px; */
+  }
+
+  .hero_description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero_content {
+    gap: 16px;
+  }
+
+  /* 친환경 철학 섹션 */
+  .philosophy_section {
+    padding: 50px 14px;
+  }
+  .philosophy_content {
+    padding: 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+  }
+  .philosophy_title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .philosophy_text {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  /* 이미지 배너 섹션 */
+  .img_banner_section {
+    width: 100%;
+    padding: 0px 14px 50px 14px;
+  }
+  .img_banner {
+    height: 170px;
+  }
+
+  /* 지속가능한 미래 섹션 */
+  .sustainable_section {
+    min-height: 80vh;
+    height: 80vh;
+  }
+
+  .sustainable_title {
+    font-size: 27px;
+    line-height: 1.3;
+  }
+  .sustainable_text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+/* 태블릿 (768px ~ 1024px)  */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero_background {
+    background-image: url(/custom/health/images/earth_tab.png);
+  }
+  body {
+    font-size: 15px;
+  }
+
+  /* 메인 히어로 섹션 태블릿 */
+  .hero_section {
+    height: 90vh;
+    min-height: 80vh;
+  }
+
+  .main_logo {
+    width: 130px;
+    top: 30px;
+  }
+
+  .hero_title {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  .hero_description {
+    font-size: 20px;
+    line-height: 1.8;
+  }
+
+  .hero_content {
+    gap: 25px;
+  }
+
+  /* 친환경 철학 섹션 태블릿 */
+  .philosophy_section {
+    padding: 80px 20px;
+  }
+
+  .philosophy_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  .philosophy_title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .philosophy_text {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* 이미지 배너 섹션 태블릿 */
+  .img_banner_section {
+    padding: 0px 20px 80px 20px;
+  }
+
+  .img_banner {
+    height: 400px;
+  }
+
+  /* 지속가능한 미래 섹션 태블릿 */
+  .sustainable_section {
+    min-height: 80vh;
+    height: 80vh;
+  }
+
+  .sustainable_title {
+    font-size: 40px;
+    line-height: 1.5;
+  }
+
+  .sustainable_text p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+}

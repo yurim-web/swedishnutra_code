@@ -1,0 +1,557 @@
+<!--@layout(/layout/basic/main.html)-->
+<!--@css(/_tpc/assets/css/main.css)-->
+<!--@js(/_tpc/assets/js/main.js)-->
+<!--@css(/custom/main_custom.css)-->
+
+<!--------------------------------------------------------------
+ ■ [ 최상단 메인 롤링 배너 | 배너매니저 ] ■ 
+--------------------------------------------------------------->
+
+<section class="main-section mainBanner">
+  <div class="main-banner-section pc dflex">
+    <div
+      class="main-banner splide section1"
+      df-banner-code="main-banner-pc"
+      hidden
+    >
+      <div class="banner-container splide__track">
+        <div class="splide__list">
+          <div class="banner-list splide__slide" df-banner-clone>
+            <a href="{#href}">
+              {#item}
+              <div
+                class="title-inner"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="800"
+              >
+                <h2 class="sub" style="font-weight: 700">{#title}</h2>
+                <div class="contents">{#html}</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="splide__arrows arrow-container">
+        <button class="splide__arrow--prev">
+          <!--@import(/_tpc/assets/images/svg/arrow-prev.html)-->
+        </button>
+        <button class="splide__arrow--next">
+          <!--@import(/_tpc/assets/images/svg/arrow-next.html)-->
+        </button>
+      </div>
+      <div class="number-pagination">
+        <span class="active-splide"></span>/<span class="total-splide"></span>
+      </div>
+    </div>
+    <div class="main-left-banner" df-banner-code="main-left-banner-pc" hidden>
+      <div class="banner-container">
+        <div class="banner-list" df-banner-clone>
+          <a href="{#href}">{#item}</a>
+          <div
+            class="title-inner"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            <h2 class="sub">{#title}</h2>
+            <div class="contents">{#html}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="main-banner-section mob dflex"
+    df-banner-code="main-banner-mob"
+    hidden
+  >
+    <div class="main-banner mob splide section2">
+      <div class="banner-container splide__track first_main_banner_container">
+        <div class="splide__list">
+          <div class="banner-list splide__slide" df-banner-clone>
+            <a href="{#href}">
+              {#item}
+              <div class="title-inner">
+                <h2 class="sub">{#title}</h2>
+                <div class="contents">{#html}</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="number-pagination">
+        <span class="active-splide">1</span>/<span class="total-splide">3</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------------------------------------------
+ ■ [ 메인 베스트 상품 레이아웃 | 【파일열기】클릭 ] ■ 
+--------------------------------------------------------------->
+<section
+  class="main-section mainBest gbmLayout"
+  data-aos="fade-up"
+  data-aos-delay="100"
+  data-aos-duration="800"
+>
+  <div class="titleArea">
+    <!-- ■ [메인 텍스트]를 입력해주세요 ■ -->
+    <h2 class="best_title">
+      꾸준히 사랑받는 <span class="pc-br"></span>베스트셀러
+    </h2>
+    <!-- ■ [메인 텍스트]를 입력해주세요 ■ -->
+
+    <!-- ■ [서브 텍스트]를 입력해주세요 ■ -->
+    <p class="best_subtext">
+      19가지 영양성분이 <span class="pc-br"></span>모두 액상으로!
+    </p>
+    <!-- ■ [서브 텍스트]를 입력해주세요 ■ -->
+  </div>
+
+  <div
+    module="product_listmain_1"
+    class="ec-base-product splide splideList1 active"
+  >
+    <!--
+        $count = 5
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+        -->
+    <div class="prdList-wrapper splide__track">
+      <ul class="prdList splide__list">
+        <!--@import(/_tpc/component/product/prd-swiper-list.html)-->
+        <!--@import(/_tpc/component/product/prd-swiper-list.html)-->
+      </ul>
+    </div>
+    <div class="splide__arrows arrow-container">
+      <button class="splide__arrow--prev">
+        <!--@import(/_tpc/assets/images/svg/arrow-prev.html)-->
+      </button>
+      <button class="splide__arrow--next">
+        <!--@import(/_tpc/assets/images/svg/arrow-next.html)-->
+      </button>
+    </div>
+  </div>
+</section>
+
+<!--------------------------------------------------------------
+ ■ [ 메인 2단 서브 배너 | 배너매니저 ] ■ 
+--------------------------------------------------------------->
+
+<!-- 원래 코드 주석 처리 -->
+<!-- 
+<section class="main-section mainGridbanner" data-aos="fade-up"  data-aos-delay="100"  data-aos-duration="1000" >
+    <div class="grid-banner pc splide gridbanner gbmLayout">
+        <div class="banner-container splide__track" df-banner-code="main-2grid-banner" hidden>
+			<div class="splide__list">
+            	<div class="banner-list splide__slide" df-banner-clone>
+                    <a href="{#href}">
+                        {#item}
+                        <div class="title-inner">
+                            <h2 class="sub">{#title}</h2>
+                            <div class="contents">{#html}</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>   -->
+
+<section
+  class="main-section mainGridbanner"
+  data-aos="fade-up"
+  data-aos-delay="100"
+  data-aos-duration="1000"
+>
+  <div class="grid-banner pc splide gridbanner gbmLayout">
+    <div
+      class="banner-container splide__track"
+      df-banner-code="main-2grid-banner"
+      hidden
+    >
+      <div class="splide__list">
+        <div class="banner-list splide__slide" df-banner-clone>
+          <a href="{#href}">
+            {#item}
+            <div class="title-inner">
+              <h2 class="sub sub_title">{#title}</h2>
+              <div class="contents">{#html}</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .sub_title {
+    font-size: 18px !important;
+  }
+  @media (max-width: 1024px) {
+    .sub_title {
+      font-size: 13px !important;
+    }
+    .gridbanner.splide .splide__track {
+      overflow: visible !important; /* Splide 강제 클리핑 해제 */
+    }
+    .gridbanner.splide .splide__list {
+      display: block !important; /* 세로 쌓기 */
+    }
+    .gridbanner.splide .splide__slide {
+      width: 100% !important; /* 한 줄 꽉 차게 */
+      margin-bottom: 16px; /* 카드 간격 */
+      display: block !important;
+    }
+    .gridbanner.splide .splide__arrows,
+    .gridbanner.splide .splide__pagination {
+      display: none !important; /* 모바일에서는 화살표/도트 숨김 */
+    }
+    .splide__list {
+      padding: 0px 20px !important;
+    }
+  }
+  @media (max-width: 768px) {
+    .splide__list {
+      padding: 0px 0px !important;
+    }
+  }
+</style>
+
+<!--------------------------------------------------------------
+ ■ [ 메인 배너형 상품 레이아웃 | 배너매니저 ] ■ 
+--------------------------------------------------------------->
+<section
+  class="main-section main1Banner gbLayout dflex"
+  data-aos="fade-up"
+  data-aos-delay="100"
+  data-aos-duration="1000"
+>
+  <div class="titleArea">
+    <div class="banner-container" df-banner-code="main-1banner-product" hidden>
+      <div class="banner-list" df-banner-clone>
+        <a href="{#href}">
+          {#item}
+          <div class="title-inner momo">
+            <h2 class="sub sub_title">{#title}</h2>
+            <div class="contents">{#html}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div module="product_listmain_2" class="ec-base-product">
+    <!--
+        $count = 3
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+        -->
+    <div class="prdList-wrapper">
+      <ul class="prdList sflex">
+        <!--@import(/_tpc/component/product/prd-list.html)-->
+        <!--@import(/_tpc/component/product/prd-list.html)-->
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .momo {
+    top: 55px !important;
+  }
+  .sub_title {
+    margin-left: 0px !important;
+    margin-bottom: 13px !important;
+  }
+  .sub_title span {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+  .btn_style {
+    width: max-content;
+    margin-top: 19px;
+    background-color: #fff;
+    color: #6d6d6d !important;
+    display: block;
+    padding: 7px 23px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    .sub_title {
+      margin-left: 0px !important;
+      margin-bottom: 4px !important;
+    }
+    .sub_title span {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    .momo {
+      top: 94px !important;
+    }
+    .btn_style {
+      width: max-content;
+      margin-top: 15px;
+      background-color: #fff;
+      color: #6d6d6d !important;
+      display: block;
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+</style>
+
+
+
+
+<!--------------------------------------------------------------
+ ■ [ 메인 비디오형 상품 레이아웃 | 【파일열기】배너매니저 ] ■ 
+--------------------------------------------------------------->
+
+<section class="main-section mainVideo" style=" background: url('/_tpc/assets/images/img/videoBG_pc.png') no-repeat left center / cover; " >
+    <div class="gbmLayout" data-aos="fade-up"  data-aos-delay="100"  data-aos-duration="1000" >
+        <div class="titleArea">
+            <div  class="video_section_logo">  <img class="logo" style="" src="/custom/footer_logo.png" alt="{$mall_name}"></img></div>
+          
+
+                <!-- ■ [메인 텍스트]를 입력해주세요 ■ -->
+            <h2 class="yellow_title">ONE SHOT<br>ENERGY BOOST</h2>
+             <p class="mo_subtitle" style="margin-left:14px">매일 챙겨먹고 싶은 즐거운 맛! 마시는 비타민,스웨디시 뉴트라</p>
+            <!-- ■ [메인 텍스트]를 입력해주세요 ■ -->
+            
+     		 <div class="sub_title_container pc_subtitle">
+            <p>매일 챙겨먹고 싶은 즐거운 맛! 마시는 비타민,스웨디시 뉴트라</p>
+                 <div class-="product_sub_container" style="display:flex; align-items: center; gap:10px; ">
+                     <div class="md_box">MD Choice</div>
+                     <span class="md_title">스웨디시 뉴트라 입문템</span>
+                 </div>
+            </div>
+     
+      
+        </div>
+        <div class="dflex">
+            <div class="video-container" df-banner-code="main-video-product" hidden>
+                <div class="banner-list {#title} {#type} mo_border" df-banner-clone>
+                    {#item}
+                </div>
+            </div>
+             <div class="sub_title_container mo_subtitle">
+                 <div class-="product_sub_container" style="display:flex; align-items: center; gap:10px; padding:15px 0px 40px 14px; ">
+                     <div class="md_box">MD Choice</div>
+                     <span class="md_title">스웨디시 뉴트라 입문템</span>
+                 </div>
+            </div>
+            <div module="product_listmain_3" class="ec-base-product splide videoPrd">
+                <!--
+                $count = 5
+                $basket_result = /product/add_basket.html
+                $basket_option = /product/basket_option.html
+                -->
+                <div class="prdList-wrapper splide__track">
+                    <ul class="prdList splide__list">
+                        <!--@import(/_tpc/component/product/prd-swiper-list.html)-->
+                        <!--@import(/_tpc/component/product/prd-swiper-list.html)-->
+                    </ul>
+                </div>
+
+                <div class="splide__arrows arrow-container">
+                    <button class="splide__arrow--prev"><!--@import(/_tpc/assets/images/svg/arrow-prev.html)--></button>
+                    <button class="splide__arrow--next"><!--@import(/_tpc/assets/images/svg/arrow-next.html)--></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 텍스트 섹션 -->
+ <!--@layout(/layout/basic/main.html)-->
+
+<section class="custom_text_section">
+    <h1 class="custom_title">스웨덴에서 시작된<br>특별한 기준</h1>
+    <p class="custom_text">스웨덴 말뫼 연구소에서 시작된 글로벌 액상기술,<br>그리고 자연을 존중하는 지속가능한 철학.<br>이 두가지가 스웨디시뉴트라의 가치입니다.</p>
+</section>
+
+
+<!--------------------------------------------------------------
+ ■ [ 메인 베스트리뷰 게시판 | 【파일열기】게시판 자동연동 ] ■ 
+--------------------------------------------------------------->
+
+<section class="main-section mainReview" id="mainReview" data-aos="fade-up"  data-aos-delay="100"  data-aos-duration="1000">
+    <div class="titleArea">
+         <!-- ■ [메인 텍스트]를 입력해주세요 ■ -->
+        <h2>후기가 증명하는 검증된 효과</h2>
+         <!-- ■ [메인 텍스트]를 입력해주세요 ■ -->
+        
+         <!-- ■ [서브 텍스트]를 입력해주세요 ■ -->
+        <p>고객님들의 사용 후기</p>
+         <!-- ■ 서브 텍스트]를 입력해주세요 ■ -->
+    </div>
+
+    <div class="photo-container gbmLayout">
+        <div class="splide photoArea">
+            <div class="splide__track">
+                <div class="splide__list" id="main_best_review">
+                    <!--
+					■ 자동으로 
+                    <div class="splide__slide phtoList">
+                        <div class="photo-image"><img src="https://ecudemo356019.cafe24.com/web/upload/image.png" alt="제목"></div>
+                        <div class="contents">
+                            <div class="review-avg"><img src="/_tpc/assets/images/icon/review_avg_5.png" alt="평점"></div>
+                            <div class="review-writer">esrt***</div>
+                            <div class="review-content">
+                                빵이나 밀가루 좋아해서 죄책감을 조금덜어보고자 구매한 카무트 효소~ 여기서만 두번째 두매인데 샘플도 아닌고단백질이라서
+                            </div>
+                        </div>
+                    </div>
+					-->
+                </div>
+            </div>
+            <div class="splide__arrows arrow-container">
+                <button class="splide__arrow--prev"><!--@import(/_tpc/assets/images/svg/arrow-prev.html)--></button>
+                <button class="splide__arrow--next"><!--@import(/_tpc/assets/images/svg/arrow-next.html)--></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--@css(/_tpc/assets/css/bestReivew.css)-->
+<!--@js(/_tpc/assets/js/mainReview.js)-->
+<!--@import(/_tpc/component/util/loading.html)-->
+<!--@import(/_tpc/component/review/prd-review-modal/main-best-review-modal.html)-->
+
+
+
+<!--------------------------------------------------------------
+ ■ [ 메인 1단 서브 배너 | 배너매니저 ] ■ 
+--------------------------------------------------------------->
+
+<section class="main-section mainBottom">
+    <div class="banner-container pc gbLayout" df-banner-code="main-bottom-banner-pc" hidden>
+        <div class="banner-list" df-banner-clone data-aos="fade-up"  data-aos-delay="100"  data-aos-duration="1000">
+            <a href="{#href}" class="bottom_banner_size">
+                {#item}
+                <div class="title-inner">
+                    <h2 class="sub"   style="font-weight:700;">{#title}</h2>
+                    <div class="contents" style="font-weight:600; line-height:1.5;">{#html}</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+     <div class="banner-container mob gbLayout" df-banner-code="main-bottom-banner-mob" hidden data-aos="fade-up"  data-aos-delay="100"  data-aos-duration="1000">
+        <div class="banner-list " df-banner-clone>
+            <a href="{#href}"  >
+                {#item}
+                <div class="title-inner">
+                    <h2 class="sub">{#title}</h2>
+                    <div class="contents">{#html}</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+</section>
+
+
+<style>
+    .bottom_banner_size img{ height: 400px !important;
+  object-fit: cover;}
+</style>
+
+
+<!--------------------------------------------------------------
+ ■ [ 메인 스토리 게시판 |【파일열기】클릭 ] ■ 
+--------------------------------------------------------------->
+
+
+<!--@css(/_tpc/assets/css/mainGallery.css)-->
+
+<section class="main-section mainBoard" data-aos="fade-up"  data-aos-delay="100"  data-aos-duration="1000" >
+    <div class="titleArea title_custom">
+        <!-- [메인 텍스트]를 입력해주세요 -->
+        <h2 class="magazine_title">스웨디시뉴트라가 <br>전하는 건강 매거진</h2>
+
+        <!-- [메인 텍스트]를 입력해주세요 -->
+        
+        <!-- [서브 텍스트]를 입력해주세요 -->
+  
+        <!-- [서브 텍스트]를 입력해주세요 -->
+    </div>
+    
+    
+    <div class="gallery-container gbmLayout" module="Board_ListPackage_2">
+        <div class="splide galleryArea">
+            <div class="splide__track" module="board_list_2">
+                <div class="splide__list">
+                    <div class="splide__slide phtoList">
+                        <div class="sh-inner">
+                            <div class="photo-image"><a href="/board/story/read.html{$param_read}"><img src="{$img_src|replace:/gallery,}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+                            <div class="contents">
+                                <div class="cat">{$category_name}</div>
+                                <a href="/board/gallery/read.html{$param_read}"> <div class="subject">{$subject}</div>   </a>
+                                <div class="date">{$write_date|date:Y-m-d}</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="splide__slide phtoList">
+                        <div class="sh-inner">
+                            <div class="photo-image"><a href="/board/story/read.html{$param_read}"><img src="{$img_src|replace:/gallery,}" onerror="this.src='//img.echosting.cafe24.com/thumb/198x198.gif'" alt="" /></a></div>
+                            <div class="contents">
+                                <div class="cat">{$category_name}</div>
+                                <a href="/board/gallery/read.html{$param_read}"> <div class="subject">{$subject}</div>   </a>
+                                <div class="date">{$write_date|date:Y-m-d}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="splide__arrows arrow-container">
+                <button class="splide__arrow--prev"><!--@import(/_tpc/assets/images/svg/arrow-prev.html)--></button>
+                <button class="splide__arrow--next"><!--@import(/_tpc/assets/images/svg/arrow-next.html)--></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--------------------------------------------------------------
+ ■ [ 롤링 팝업 배너 | 배너매니저 ] ■ 
+--------------------------------------------------------------->
+
+<!--@css(/_tpc/assets/css/rollingPopup.css)-->
+<!-- 원래 js 코드는 지웠고 새로 custom 한 js -->
+<!--@js(/custom/rolling_popup_custom.js)-->
+<div id="rollingPopup" class="rollin__popup splide" df-banner-code="rolling-popup" hidden>
+	<div class="popup__overlay"></div>
+	<div class="popup-wrapper">
+        <div class="splide__track">
+            <div class="splide__list" >
+                <div class="banner__list splide__slide" df-banner-clone tpc-button-data="{#html}"  tpc-link-data="{#href}">
+                    <a href="{#href}">{#item}</a>
+                </div>
+            </div>
+            <ul class="splide__pagination splide__pagination--ltr"></ul>
+        </div>
+        <a id="popupButton" href="/">자세히보기</a>
+        <a class="popupClose btnClose" href="#none"><!--@import(/_tpc/assets/images/svg/close.html)--></a>
+        <a class="todayClose" href="#none">오늘 하루 보지 않기</a>
+    </div>
+</div>
+
+
+
+<!--import(/_tpc/component/util/intro.html)-->
+

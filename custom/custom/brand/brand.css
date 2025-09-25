@@ -1,0 +1,303 @@
+/* 브랜드 페이지 pc 스타일 코드 */
+/* 기본 스타일 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", Arial, "Apple SD Gothic Neo", "Noto Sans Regular",
+    "맑은 고딕", "malgun gothic", "돋움", "dotum", sans-serif;
+  line-height: 1.6;
+  color: #211d1d;
+  letter-spacing: -0.2px;
+}
+
+/* pc 에서 줄바꿈하는거  */
+.pc-br::after {
+  content: "\A"; /* 줄바꿈 */
+  white-space: pre; /* 줄바꿈 인식 */
+  display: inline; /* 인라인으로 변경하여 줄 간격 조정 */
+}
+.container {
+  max-width: 1180px;
+
+  margin: 0 auto;
+}
+
+/* 히어로 섹션 */
+.hero_section {
+  position: relative;
+  height: 1100px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(/custom/brand/images/section_banner_1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero_content {
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 33px;
+}
+/* 맨위로고 */
+.main_logo {
+  width: 174px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero_title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero_description {
+  font-size: 30px;
+  line-height: 57px;
+  letter-spacing: -1px; /* -25 tracking ≒ -1px */
+  color: #ffffff;
+}
+
+/* 공통 섹션 스타일 */
+/* section {
+  padding: 80px 0;
+} */
+
+.content_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+/* 이미지랑 같이 있는 공간 */
+.img_content_wrapper {
+  gap: 105px;
+}
+
+.text_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 서브 글자도 같이 있는 거 */
+.text_content_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.section_title {
+  font-size: 41px;
+  letter-spacing: -0.8px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #000000;
+}
+.section_banner {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+.title_line1,
+.title_line2 {
+  display: block;
+}
+
+.section_description {
+  /* 자연스러운 줄바꿈 */
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  font-size: 20px;
+  line-height: 1.9;
+  color: #000000;
+  font-weight: 400;
+}
+
+/* 품질의 약속 섹션 */
+.quality_section {
+  background-color: #ffffff;
+  padding: 180px 0px;
+}
+
+.quality_section .content_wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* NORDIC 라인 섹션 */
+.nordic_section {
+  background-color: #ffffff;
+  padding: 150px 0px;
+}
+
+.nordic_section .content_wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+
+.lab_image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: grayscale(100%);
+}
+
+/* 운영 철학 섹션 */
+.philosophy_section {
+  background-color: #ffffff;
+  padding: 30px 0px 180px 0px;
+}
+
+.philosophy_section .content_wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+
+.image_content img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* 지속 가능한 선택 섹션 */
+.sustainable_section {
+  position: relative;
+  height: 75vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sustainable_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/custom/brand/images/section_banner_3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.sustainable_content {
+  height: 100%;
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.sustainable_title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.sustainable_description {
+  font-size: 23px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* 건강에 대한 생각 섹션 */
+.health_section {
+  background-color: #ffffff;
+  padding: 180px 0px;
+}
+
+.health_section .content_wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+
+.health_section .image_content img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+/* 동도F&P 섹션 */
+.dongdo_section {
+  background-color: #ffffff;
+  padding: 0px 0px 180px 0px;
+}
+
+.dongdo_section .content_wrapper {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* 스크롤 애니메이션 스타일 */
+.scroll_animate {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll_animate.animate_in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 배너 이미지 애니메이션 */
+.banner_animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease-out;
+}
+
+.banner_animate.animate_in {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* 푸터 부분  */
+#gbFooter {
+  margin-top: 0px !important;
+}
+
+.header-menu-container
+  .header-menu-wrapper
+  .header-menu-layout
+  .dropdown-arrow {
+  top: 14px !important;
+}
+.header-menu-container .header-menu-wrapper .header-menu-content {
+  top: 20px !important;
+}
+#gbHeader .menu-header .sub__category li {
+  padding: 2px 0 !important;
+  width: 100%;
+}
