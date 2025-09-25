@@ -8,7 +8,6 @@
 
 [![Live Site](https://img.shields.io/badge/🌐_Live_Site-https://swedishnutra.kr/-blue?style=flat-square)](https://swedishnutra.kr/)
 [![Platform](https://img.shields.io/badge/🛒_Platform-Cafe24_쇼핑몰-orange?style=flat-square)](https://cafe24.com/)
-[![Company](<https://img.shields.io/badge/🏢_Company-동도F%26P(주)-purple?style=flat-square>)]()
 
 </div>
 
